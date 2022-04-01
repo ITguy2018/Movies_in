@@ -1,2 +1,2 @@
-web: gunicorn movieapp:server
+web: gunicorn app:server
 
