@@ -2,4 +2,8 @@
 
 A dashboard using Dash. This displays movies that had any filming locations in the State of Vermont.
 
-I created the csv myself and used the geojson file for outlining Vermonts counties in the map. First created an interactive map using Folium. Saved the map in and html file then used that in an iframe placed in the dash app.
+Created data from google and created a csv file from that. From there I can it through another app I created which automatically add the lon and lat to the file you upload granted it has a "Address" column with real address. See the github for that project.
+
+#### GeoCode Github: https://github.com/ITguy2018/GeoCodingApp
+
+
