@@ -47,7 +47,7 @@ app.layout = dbc.Container([
     # html Iframe loading in the map file
     dbc.Row([
         dbc.Col(html.Div([html.Iframe(id='map', srcDoc=open(
-            'data/Movies_In_Vermont.html', 'r').read(), width='99%', height='620')], style={'width': '95%', 'display': 'inline-block'
+            'data/Updated_Movies_In_Vermont.html', 'r').read(), width='99%', height='620')], style={'width': '95%', 'display': 'inline-block'
                                                                                             }), style={'width': '49%', 'display': 'inline-block'}),
         # New column where the graph will be place - beside the map
         dbc.Col(
