@@ -129,9 +129,9 @@ app.layout = dbc.Container([
 
 ], fluid=True)
 
+
 # Call-back components
 # --------------------------------------------------------------------------------------------
-
 
 @ app.callback(
     Output('table-container', 'children'),
