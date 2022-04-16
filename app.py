@@ -152,6 +152,6 @@ def update_datable(selected_years):
                      (df['Year'] <= selected_years[1])]
     return filtered_df.to_dict('records')
 
-# Classic python code
+# Need this to run the application
 if __name__ == '__main__':
     app.run_server(debug=False)
