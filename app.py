@@ -51,6 +51,7 @@ app.layout = dbc.Container([
                                                                                             }), style={'width': '49%', 'display': 'inline-block'}),
         # New column where the graph will be place - beside the map
         dbc.Col(
+            # Create a graph and choose desired parameters
             dcc.Graph(
                 id='graph',
                 figure={
@@ -76,7 +77,7 @@ app.layout = dbc.Container([
 
     ]),
     # Range-slider
-    # Can filter the datatable and show different ranges
+    # Provides a method to be able to filter years based on a range
     dbc.Row([
         dbc.Col(dcc.RangeSlider(id='year-slider',
                                 min=year_min,
@@ -93,10 +94,13 @@ app.layout = dbc.Container([
 
     dbc.Row([
             dbc.Col(html.Div(
+                # Datatable of the actual dataset
+                # Use range slider to view films in particular desired filming Years
                 dash_table.DataTable(id='table-container',
                                      columns=[{'name': col, 'id': col}
                                               for col in df.columns],
                                      data=df.to_dict('records'),
+                                     # CSS code for formatting
                                      style_cell={
                                          'font_family': 'Arial',
                                          'padding': '1.rem',
@@ -137,11 +141,12 @@ def update_table(value):
 
     return str(value)
 
-
+# Call back function to connect the datatable and range slider
 @ app.callback(
     Output('table-container', 'data'),
     Input('year-slider', 'value')
 )
+# Function for updating the datatable
 def update_datable(selected_years):
     filtered_df = df[(df['Year'] >= selected_years[0]) &
                      (df['Year'] <= selected_years[1])]
