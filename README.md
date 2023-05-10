@@ -18,6 +18,7 @@ Created the dash project and imported map html file with iframe, created the som
  - https://www.reddit.com/
  - https://www.udemy.com/
  - https://dash.plotly.com/
+ and of course....ChatGPT
 
 
 
