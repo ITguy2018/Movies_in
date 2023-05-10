@@ -1,14 +1,16 @@
 # Vermont-Movies-Dashboard
 
 ## Description
-A dashboard using Dash. This displays movies that had any filming locations in the State of Vermont.
-
+This Dash-based dashboard showcases movies filmed in the State of Vermont. It serves as an interactive visualization tool for exploring various filming locations within the state.
 
 ## Summary
-This project was my first using the Dash library, I created the data myself then ran through another web app of mine(link at the bottom) that puts lon and lat coords on csv files automatically(need a legit address column in csv file fyi). Created the popup markers added some html and a link for each one then saved the html to import into dash project
+This project was my first experience using the Dash library. I created the dataset myself and processed it through another web app of mine (link at the bottom) to automatically add longitude and latitude coordinates to the CSV file (a valid address column is required).
 
-Created the dash project and imported map html file with iframe, created the some viz's and here is a preview.
-![Screen Shot 2022-04-15 at 9 03 03 PM](https://user-images.githubusercontent.com/46171023/163655773-ed3d2e21-abdf-4970-9ec2-f06a5f74a7c8.png)
+I designed popup markers with custom HTML and added a link for each movie, then saved the HTML to import it into the Dash project. After importing the map HTML file with an iframe, I created some visualizations to complement the map.
+
+Here is a preview of thedashboard:
+![moviesinvermont](https://github.com/PythonButcher/VermontMoviesDashboard/assets/46171023/b9b9a506-f269-486a-9aef-c6161948af09)
+
 
 ## Link to application: https://moviesfilmedinvt.herokuapp.com/
 
@@ -18,19 +20,10 @@ Created the dash project and imported map html file with iframe, created the som
  - https://www.reddit.com/
  - https://www.udemy.com/
  - https://dash.plotly.com/
- and of course....ChatGPT
+ - ChatGPT
 
 
-
-
-
-
-
-
-
-
-
-#### Check out my GeoCoding Repo
+#### Additional Projects
 ##### GeoCode Github: https://github.com/ITguy2018/GeoCodingApp 
 
 
